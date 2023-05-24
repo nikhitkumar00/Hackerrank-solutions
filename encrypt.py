@@ -1,8 +1,6 @@
 def ENCRYPT(s):
-    chrr = ''
-    oldchrr = ''
+    chrr = oldchrr = strr = ''
     count = 1
-    strr = ''
 
     for i in range(1,len(s)):
         chrr = s[i]
