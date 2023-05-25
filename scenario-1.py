@@ -40,11 +40,11 @@ l = input().split()
 min = 0
 max = n-1
 i = 0
-while(min<=max):
-    if i%2==0:
-        print(l[max],end=' ')
+while (min <= max):
+    if i % 2 == 0:
+        print(l[max], end=' ')
         max = max - 1
     else:
-        print(l[min],end=' ') 
-        min = min + 1   
+        print(l[min], end=' ')
+        min = min + 1
     i = i + 1

@@ -64,21 +64,23 @@ import sys
 # The function accepts INTEGER_ARRAY marks as parameter.
 #
 
+
 def GEEK_MARKS(marks):
-    nz=0
-    sum=0
+    nz = 0
+    sum = 0
     for i in range(len(marks)):
         if (marks[i] != 0):
             marks[nz] = marks[i]
             sum = sum + marks[i]
             nz = nz + 1
     avg = sum//nz
-    while(nz < len(marks)):
+    while (nz < len(marks)):
         marks[nz] = 0
         nz = nz + 1
     marks.append(avg)
     return marks
-    
+
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 

@@ -43,7 +43,7 @@ INPUT LIMIT IS 5
 l = []
 flag = 0
 
-while(1):
+while (1):
     n = input()
 
     if n == 'q' or n == 'Q':
@@ -51,11 +51,11 @@ while(1):
             print("INPUT LIMIT IS 5")
             exit()
         break
-        
+
     elif len(l) > 5:
         print("INPUT LIMIT IS 5")
         exit()
-    
+
     l.append(n)
     if len(n) != 10:
         flag = flag + 1
@@ -65,5 +65,5 @@ while(1):
         if c.isdigit() == 0:
             flag = flag + 1
             break
-            
+
 print(len(l)-flag)

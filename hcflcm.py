@@ -9,6 +9,7 @@ def ggcd(l):
         if flag == 0:
             return i
 
+
 n = int(input())
 m = input().split()
 l = []
@@ -17,6 +18,6 @@ for i in m:
 hcf = ggcd(l)
 product = 1
 for i in l:
-    product = (product * i)//ggcd([product,i])
+    product = (product * i)//ggcd([product, i])
 lcm = product
 print(f"HCF={hcf} LCM={lcm}")

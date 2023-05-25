@@ -6,9 +6,11 @@ import random
 import re
 import sys
 
+
 def BIN_SEARCH(n, arr, key):
     z = _BIN_SEARCH(0, n-1, arr, key)
     return z
+
 
 def _BIN_SEARCH(low, high, arr, key):
     l = low
@@ -22,6 +24,7 @@ def _BIN_SEARCH(low, high, arr, key):
         else:
             return _BIN_SEARCH(m+1, h, arr, key)
     return -1
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

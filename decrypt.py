@@ -38,12 +38,13 @@ import random
 import re
 import sys
 
+
 def DECRYPT(s):
     i = 0
     temp = 0
     chrr = ""
     strr = ""
-    while(i < len(s)):
+    while (i < len(s)):
         if s[i].isdigit():
             if i != (len(s)-1):
                 if s[i+1].isdigit():
@@ -51,18 +52,19 @@ def DECRYPT(s):
                     i = i + 2
                 else:
                     temp = int(s[i])
-                    i = i + 1       
+                    i = i + 1
             else:
                 temp = int(s[i])
                 i = i + 1
-                
+
             for k in range(temp):
                 strr = strr + chrr
         else:
             chrr = s[i]
             i = i + 1
-  
+
     return strr
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

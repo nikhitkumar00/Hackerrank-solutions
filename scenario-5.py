@@ -52,7 +52,7 @@ try:
     while count < 20:
         n = int(input())
 
-        if n <= 0 or n >120:
+        if n <= 0 or n > 120:
             print("Invalid Input")
             exit()
 

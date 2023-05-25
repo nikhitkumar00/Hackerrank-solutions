@@ -23,8 +23,9 @@
         12
 """
 
-count = 0;n = input()
+count = 0
+n = input()
 for i in n:
-    if i.isnumeric() and int(i)%2==0:
+    if i.isnumeric() and int(i) % 2 == 0:
         count += int(i)
 print(count)

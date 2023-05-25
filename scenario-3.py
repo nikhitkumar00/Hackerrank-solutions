@@ -73,6 +73,6 @@ for i in l:
     if i == 0:
         flag = flag + 1
         continue
-    print(i,end=' ')
+    print(i, end=' ')
 for i in range(flag):
-    print('0',end=' ')
+    print('0', end=' ')

@@ -46,6 +46,7 @@ import random
 import re
 import sys
 
+
 def BIN_SEARCH(n, arr, key):
     low = 0
     high = n-1

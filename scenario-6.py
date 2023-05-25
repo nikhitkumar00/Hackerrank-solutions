@@ -78,6 +78,6 @@ if total != 0:
     vowels = 'AEIOUaeiou'
     for i in s:
         if i not in vowels:
-            print(i,end='')
+            print(i, end='')
 else:
     print('0')

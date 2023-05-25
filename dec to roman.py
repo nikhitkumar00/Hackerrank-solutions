@@ -4,14 +4,15 @@ def DEC_ROM(n):
         ("C", 100), ("XC", 90), ("L", 50), ("XL", 40),
         ("X", 10), ("IX", 9), ("V", 5), ("IV", 4), ("I", 1)
     ]
-    
-    roman = "" 
-    
+
+    roman = ""
+
     for symbol, value in symbols:
         while n >= value:
             roman += symbol
             n -= value
-    
+
     return roman
+
 
 print(DEC_ROM(int(input())))
