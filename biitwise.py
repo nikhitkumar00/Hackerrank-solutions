@@ -7,3 +7,10 @@ print(d)
 
 d = a | b & ~c
 print(d)
+
+"""
+    Precedence (Decreasing)
+    ~   Negation
+    &   And
+    |   Or
+"""
