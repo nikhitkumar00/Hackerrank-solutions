@@ -80,12 +80,10 @@ if source in bus_stops and destinaton in bus_stops:
     for i in range(8):
         if source == bus_stops[i]:
             start = i
-            break
-    
-    for i in range(start,16):
-        if destinaton == bus_stops[i]:
-            stop = i
-            break
+            for i in range(start,16):
+                if destinaton == bus_stops[i]:
+                    stop = i
+                    break
     
     if start == stop:
         print("INVALID INPUT")
