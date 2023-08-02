@@ -1,3 +1,3 @@
 n = input()
-d = int(n,2)
-print(hex(d)[2:].upper())
+decimal = int(n,2)
+print(hex(decimal)[2:].upper())

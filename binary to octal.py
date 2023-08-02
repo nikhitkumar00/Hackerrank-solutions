@@ -1,3 +1,3 @@
 n = input()
-d = int(n,2)
-print(oct(d)[2:])
+decimal = int(n,2)
+print(oct(decimal)[2:])
