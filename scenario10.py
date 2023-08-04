@@ -84,7 +84,7 @@ if source in bus_stops and destinaton in bus_stops:
                 if destinaton == bus_stops[i]:
                     stop = i
                     break
-    
+
     if start == stop:
         print("INVALID INPUT")
         exit()

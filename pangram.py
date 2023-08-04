@@ -14,7 +14,7 @@ new = ""
 
 for i in l:
     new = new + i
-    
+
 if new == str2:
     print("Pangram")
 else:
