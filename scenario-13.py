@@ -109,7 +109,7 @@ try:
         quantity = int(input())
 
         assert quantity > 0 and quantity < 21
-        total += menu[number]*quantity
+        total += menu[number] * quantity
         more = input().upper()
 
         assert more == "Y" or more == "N"
