@@ -1,9 +1,20 @@
 try:
-    price = {1:50,2:100,3:40,4:200,5:300}
+    price = [50,100,40,200,300]
     n = int(input())
+    total = 0
     itemno = list(map(int,input().split()))
-    assert itemno in price
-    quantity = list(map(int,input().split()))
+    quantity = list(map(float,input().split()))
+
+    for i in range(len(itemno)):
+        total += price[itemno[i]-1] * quantity[i]
+    
+    if total >= 1000:
+        total -= total * 0.1
+    
+    if input().lower() == "y":
+        total -= total * 0.05
+    
+    print(f"{total} INR")
 
 except:
     print("INVALID INPUT")
