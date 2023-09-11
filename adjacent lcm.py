@@ -9,4 +9,4 @@ s = set()
 
 for i in range(len(l) - 1):
     s.add(lcm(l[i], l[i + 1]))
-print(min(s), max(s))
+print(max(s))
