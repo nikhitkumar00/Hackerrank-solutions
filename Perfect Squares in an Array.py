@@ -1,4 +1,4 @@
-def checkPerfectSquare(ob, N):
+def checkPerfectSquare(N):
     if N < 0:
         return 0
 
